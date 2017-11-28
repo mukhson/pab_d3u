@@ -28,5 +28,51 @@
 						echo form_open('Admin/simpan',$attribute_form);
 					?>
 						<div class="box-body">
-							
+							<div class="form-group">
+								<label for="txt_nip_admin" class="col-sm-2 control-label">Nomor Induk Pegawai</label>
+								<div class="col-sm-10">
+									<?php echo form_input('txt_nip_admin','',$attribute_text); ?>
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="txt_nama_admin" class="col-sm-2 control-label">Nama Pegawai</label>
+								<div class="col-sm-10">
+									<?php echo form_input('txt_nama_admin','',$attribute_text); ?>
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="txt_pwd" class="col-sm-2 control-label">Password</label>
+								<div class="col-sm-10">
+									<?php echo form_password('txt_pwd','',$attribute_text); ?>
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="txt_role" class="col-sm-2 control-label">Role</label>
+								<div class="col-sm-10">
+									<?php
+									$role_admin = array('99'=>'Pilih Role','0'=>'User','1'=>'Admin');
+									echo form_dropdown('txt_role',$role_admin,'99',$attribute_text);
+									?>
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="tags" class="control-label col-lg-2">&nbsp;</label>
+								<div class="col-sm-10">
+									<?php echo form_submit('btn_simpan','Simpan',array('class'=>'btn btn-primary btn-flat')); ?>
+								</div>
+							</div>
 						</div>
+						<!-- /.box body -->
+						<div class="box-footer">
+							<a onclick="window.history.back(-1)" class="btn btn-success btn-flat"><i class="fa fa-step-backward"></i> Kembali </a>
+						</div>
+						<!-- /.box footer -->
+					<?php echo form_close(); ?>
+				</div>
+				<!-- /.box -->
+			</div>
+			<!-- /.col(right) -->
+		</div>
+		<!-- /.row -->
+	</section>
+</div>
