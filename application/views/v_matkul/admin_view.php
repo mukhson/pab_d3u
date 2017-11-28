@@ -32,8 +32,8 @@
 								<tr>
 									<th>Kode Matakuliah</th>
 									<th>Nama Matakuliah</th>
-									<th>Nama</th>
-									<th>Password</th>
+									<th>Jumlah SKS</th>
+									<th>Jenis Matakuliah</th>
 									<th>Role</th>
 									<th width="100">Action</th>
 								</tr>
